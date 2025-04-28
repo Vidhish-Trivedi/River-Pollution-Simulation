@@ -161,7 +161,7 @@ $s(x) = s_m - \frac{\mu \gamma}{\mu_1 - \mu} e^{-\frac{\mu}{c}x} + C e^{-\frac{\
 
 ---
 
-# 3. ✅ Find Constant \( $C$ \)
+### Find Constant \( $C$ \)
 
 Use boundary condition:
 - At \( $x = 0$ \), \( $s(0) = s_m$ \).
@@ -177,7 +177,7 @@ $C = \frac{\mu \gamma}{\mu_1 - \mu}$
 
 ---
 
-# 4. ✅ Final Steady-State Solution for \( $s(x)$ \)
+### Final Steady-State Solution for \( $s(x)$ \)
 
 Thus:
 
@@ -188,7 +188,7 @@ s(x) = s_m - \frac{\mu \gamma}{\mu_1 - \mu} \left( e^{-\frac{\mu}{c}x} - e^{-\fr
 
 ---
 
-# 🎯 **Summary of Final Solutions:**
+### **Summary of Final Solutions:**
 
 - Pollutant concentration:
 
