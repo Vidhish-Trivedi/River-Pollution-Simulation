@@ -1,8 +1,14 @@
 import pandas as pd
+import sys
 import matplotlib.pyplot as plt
 
 # Read the simulation data
-data = pd.read_csv('river_simulation.csv')
+if len(sys.argv) != 2:
+    print("Usage: python plot_river.py <filename>")
+    sys.exit(1)
+
+filename = sys.argv[1]
+data = pd.read_csv(filename)
 
 # Create the plot
 plt.figure(figsize=(10, 6))
