@@ -83,7 +83,7 @@ $\boxed{p(x) = \gamma e^{-\frac{\mu}{c}x}}$
 
 ---
 
-# 2. ✅ Solve for Oxygen Concentration \( $s(x)$ \)
+### Solve for Oxygen Concentration \( $s(x)$ \)
 
 Now the oxygen steady-state equation is:
 
