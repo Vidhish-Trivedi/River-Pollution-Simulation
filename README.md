@@ -1,4 +1,7 @@
 # River-Pollution-Simulation
+## Contributors
+- Vidhish Trivedi (IMT2021055)
+
 ## 1. **Differential Equations for Pollution in Rivers**
 
 There are two main variables:
@@ -208,14 +211,6 @@ $\boxed{s(x) = s_m - \frac{\mu \gamma}{\mu_1 - \mu} \left( e^{-\frac{\mu}{c}x} -
 
 ---
 
-## 3. **Plan for C++ Simulation**
-- Discretize the river into small segments: \( $\Delta x$ \).
-- March forward in space (Euler method or Runge-Kutta 4).
-- Simulate \( $p(x)$ \) and \( $s(x)$ \) along the river length.
+## Modeling Time-Variant Scenario
 
----
-
-## 4. **Quick Sketch of C++ Simulation**
-It will:
-- Solve for \( $p(x)$ \) analytically
-- Solve for \( $s(x)$ \) numerically using Forward Euler
+$\rho(x, t) = \gamma \cdot U\left(t - \frac{x}{c}\right) \cdot e^{-\mu x / c}$
