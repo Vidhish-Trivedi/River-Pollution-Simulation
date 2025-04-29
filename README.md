@@ -154,7 +154,7 @@ where \( $C$ \) is a constant of integration.
 ---
 
 ### Solve for \( $s(x)$ \):
-Divide by \( e$^{\frac{\mu_1}{c}x}$ \):
+Divide by \( $e^{\frac{\mu_1}{c}x}$ \):
 
 $s(x) = s_m - \frac{\mu \gamma}{\mu_1 - \mu} e^{-\frac{\mu}{c}x} + C e^{-\frac{\mu_1}{c}x}$
 

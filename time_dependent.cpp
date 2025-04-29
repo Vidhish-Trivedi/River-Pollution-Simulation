@@ -53,7 +53,8 @@ int main() {
 
         // Output results to a CSV file
         string fname = "pollutant_traveling_wave_" + to_string(ic.idx) + ".csv";
-        ofstream outfile(fname);
+        system("mkdir -p Results");
+        ofstream outfile("Results/" + fname);
         outfile << "x,pollutant_concentration\n";
         for (int i = 0; i <= ic.N; ++i) {
             outfile << x[i] << "," << rho[i] << "\n";

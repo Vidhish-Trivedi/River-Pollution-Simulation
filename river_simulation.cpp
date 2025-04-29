@@ -70,14 +70,16 @@ int main()
 
         // Output results to a CSV file
         string fname = "river_simulation" + to_string(ic.idx) + ".csv";
-        ofstream outfile(fname);
+        // Ensure the Results directory exists
+        system("mkdir -p Results");
+        ofstream outfile("Results/" + fname);
         outfile << "x,pollutant_concentration,oxygen_concentration\n";
         for (int i = 0; i <= ic.N; ++i)
         {
             outfile << x[i] << "," << p[i] << "," << s[i] << "\n";
         }
         outfile.close();
-        cout << "Simulation complete. Results saved to" + fname + ".\n";
+        cout << "Simulation complete. Results saved to " + fname + ".\n";
     }
         return 0;
 }

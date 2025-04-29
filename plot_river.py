@@ -1,5 +1,6 @@
 import pandas as pd
 import sys
+import os
 import matplotlib.pyplot as plt
 
 # Read the simulation data
@@ -8,7 +9,9 @@ if len(sys.argv) != 2:
     sys.exit(1)
 
 filename = sys.argv[1]
-data = pd.read_csv(filename)
+data = pd.read_csv(filename)    # filename: ./Results/xyz.csv
+
+filename = filename.split('/')[-1]  # Extract the filename from the path
 
 # Create the plot
 plt.figure(figsize=(10, 6))
@@ -25,6 +28,10 @@ plt.ylabel('Concentration')
 plt.title('Pollutant and Oxygen Concentrations in River')
 plt.legend()
 plt.grid(True)
+
+# Create the directory if it does not exist
+os.makedirs("./Plots", exist_ok=True)
+plt.savefig("./Plots/" + filename.replace('.csv', '.png'), dpi=300, bbox_inches='tight')
 
 # Show the plot
 plt.show()
